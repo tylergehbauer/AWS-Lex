@@ -10,7 +10,7 @@ I went with
 
 I was hired as a digital transformation consultant by one of the most prominent retirement plan providers in the country; they want to increase their client portfolio, especially by engaging young people. Since machine learning and NLP are disrupting finance to improve customer experience, I decided to create a robo advisor that could be used by customers or potential new customers to get investment portfolio recommendations for retirement.
 
-I used Amazon Lex to create a RoboAdvisor that take the user's name and age and helps plan for retirement. I then utilizled a lambda function so the bot is more dynamic. 
+I used Amazon Lex to create a RoboAdvisor that takes the user's name and age and helps plan for retirement. I then utilizled a lambda function to make the bot more dynamic. 
 
 ## For User Input Validation:
 
@@ -19,10 +19,15 @@ The age should be greater than zero and less than 65 and the investment_amount s
 ## Depending on how risky you want your investment to be, the recommendations are as follows: 
 
 none: "100% bonds (AGG), 0% equities (SPY)"
+
 very low: "80% bonds (AGG), 20% equities (SPY)"
+
 low: "60% bonds (AGG), 40% equities (SPY)"
+
 medium: "40% bonds (AGG), 60% equities (SPY)"
+
 high: "20% bonds (AGG), 80% equities (SPY)"
+
 very high: "0% bonds (AGG), 100% equities (SPY)"
 
 ## *Video labeled amazonlex.mov demostrates the RoboAdvisor I created.*
